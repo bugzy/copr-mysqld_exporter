@@ -7,7 +7,7 @@ Type=simple
 RemainAfterExit=no
 User=mysqld_exporter
 Group=mysqld_exporter
-EnvironmentFile=/etc/sysconfig/mysqld_exporter.conf
+EnvironmentFile=/etc/mysqld_exporter/mysqld_exporter.conf
 ExecStart=/usr/sbin/mysqld_exporter $OPTIONS
 
 [Install]
