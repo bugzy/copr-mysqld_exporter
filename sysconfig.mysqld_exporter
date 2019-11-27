@@ -1,4 +1,4 @@
-OPTIONS=" --config.my-cnf /root/.my.cnf \
+OPTIONS=" --config.my-cnf /var/lib/mysql/.my.cnf \
 --log.level error \
 --collect.binlog_size \
 --collect.engine_innodb_status \
