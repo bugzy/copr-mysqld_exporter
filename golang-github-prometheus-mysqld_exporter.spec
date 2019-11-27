@@ -16,7 +16,7 @@
 
 Name:           golang-%{provider}-%{project}-%{repo}
 Version:        0.12.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        MySQL metrics exporter
 License:        ASL 2.0
 URL:            https://%{provider_prefix}
@@ -95,6 +95,9 @@ getent passwd mysqld_exporter > /dev/null || \
 %endif
 
 %changelog
+* Tue Nov 26 2019 Bugzy Little <bugzylittle@gmail.com> - 0.12.1-3
+- Fix default options for version > 1.10
+
 * Thu Nov 21 2019 Bugzy Little <bugzylittle@gmail.com> - 0.12.1-2
 - Fix systemd unit file
 
